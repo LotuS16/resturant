@@ -79,7 +79,7 @@ class NavBar extends HTMLElement{
       <h1>Restaurant</h1>
     </div>
     <ul class="nav_list">
-      <li class="home"><a href="index.html">home</a></li>
+      <li class="home"><a href="http://localhost:9001/">home</a></li>
       <li class="favorite"><a href="#" class="active">favorite</a></li>
       <li class="aboutUs"><a href="https://github.com/LotuS16">about us</a></li>
     </ul>
