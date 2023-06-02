@@ -2,10 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/main.css">
   <title>Restaurant Apps Starter Project</title>
 </head>
 <body>
-  <nav-bar>y</nav-bar>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="nav-branding">Restaurant</a>
+      <ul class="nav-menu">
+        <li class="nav-list">
+          <a href="index.html" class="nav-link">home</a>
+        </li>
+        <li class="nav-list">
+          <a href="#" class="nav-link">favorite</a>
+        </li>
+        <li class="nav-list">
+          <a href="https://github.com/LotuS16" class="nav-link">about us</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
 </body>
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click",() => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  })
+
+  document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", ()=>{
+    hamburger.classList.remove("active");
+    navMenu.classList.toggle("active");
+  }))
+</script>
 </html>
